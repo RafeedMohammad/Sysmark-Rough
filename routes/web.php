@@ -23,4 +23,13 @@ Route::get('/about', 'PagesController@about');
 
 Route::get('/services', 'PagesController@services');
 
+Route::get('/create', 'PagesController@create');
+
+Route::post('/saveproduct', 'PagesController@saveproduct');
+
+Route::get('/show/{id}', 'PagesController@show');
+
+Route::get('/edit/{id}', 'PagesController@editproduct');
+
+Route::post('/update', 'PagesController@updateproduct');
 
